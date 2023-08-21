@@ -1,6 +1,6 @@
 -- Dax los 10 mejores Productos
 TOP_10:=CALCULATE([Total_Ventas], 
-                   TOPN(10,ALL(Productos[NombreProducto]),
-                   [Total_Ventas],ASC),
-                   VALUES(Productos[NombreProducto])
-                  )
+                TOPN(10,ALL(Productos[NombreProducto]),
+                [Total_Ventas],ASC),
+                VALUES(Productos[NombreProducto])
+             )
